@@ -12,6 +12,6 @@ try:
     input_hours = int(input("Enter hours: "))
     input_rate = int(input("Enter rate: "))
     salary = compute_pay(input_hours, input_rate)
-    print("Salary:",salary)
+    print("Pay:",salary)
 except:
     print("Error, please enter numeric input")
