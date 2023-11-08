@@ -21,3 +21,6 @@ if count > 0:
     print("Sum of input numbers:", total)
     print("Number of inputs:", count)
     print("Average of input numbers:",average)
+
+
+https://nsmart.wsu.ac.kr/courses/31210
