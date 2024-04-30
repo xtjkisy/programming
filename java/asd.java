@@ -17,3 +17,29 @@ public class PhysicsTeacher extends Teacher{
 }
 
 ----------------------------------------------------------------------------------
+class Person{
+    private String name;
+    Person(String name){
+        this.name=name;
+    }
+    public String getname(){
+        return name;
+    }
+}
+class Student extends Person{
+    private int num;
+    public Student(String newn, int num){
+        super(newn);
+        this.num = num;
+    }
+    public void display(){
+        System.out.println(getname() +" "+ this.num);
+    }
+}
+public class New{
+public static void main(String args[]){
+    Student n = new Student("Syrga", 2004);
+    n.display();
+}
+}
+--------------------------------------------------------------------------------
