@@ -43,3 +43,21 @@ public static void main(String args[]){
 }
 }
 --------------------------------------------------------------------------------
+
+class Vehicle{
+    void run(){
+        System.out.println("Vehicle running");
+    }
+}
+public class Bike2 extends Vehicle{
+        void run(){
+            super.run();
+            System.out.println("Bike is running!");
+        }
+        public static void main(String args[]){
+            Bike2 b = new Bike2();
+            b.run();
+        }
+}
+    
+---------------------------------------------------------------------------------
