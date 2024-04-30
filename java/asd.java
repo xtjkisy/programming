@@ -61,3 +61,49 @@ public class Bike2 extends Vehicle{
 }
     
 ---------------------------------------------------------------------------------
+
+
+public class Shape{
+    private double height;
+    private double width;
+    public void setValues(double height, double width)
+    {
+        this.height = height;
+        this.width = width;
+    }
+    public double getHeight(){
+        return height;
+    }
+    public double getWidth(){
+        return width;
+    }
+}
+public class Rectangle extends Shape{
+    public double getArea(){
+        return getHeight() *getWidth();
+    }
+}
+public class Triangle extends Shape{
+    public double getArea(){
+        return (getHeight()* getWidth())/2;
+    }
+}
+public class Main{
+    public static void main(String args[]){
+        Shape shape;
+        Rectangle rect = new Rectangle();
+        shape = rect;
+        
+        shape.setValues(78, 5);
+        
+        System.out.println("Area of a rectangle: " +rect.getArea());
+        
+        Triangle tri = new Triangle();
+        shape = tri;
+        shape.setValues(34, 3);
+        
+        System.out.println("Area of a trianlge: " +rect.getArea());
+    }
+}
+//here some errors, check and write it again
+--------------------------------------------------------------------------------------------
