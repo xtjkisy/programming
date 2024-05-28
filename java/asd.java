@@ -107,3 +107,18 @@ public class Main{
 }
 //here some errors, check and write it again
 --------------------------------------------------------------------------------------------
+
+
+
+import java.util.List;
+import java.util.ArrayList;
+public class ListExample {
+    public static void main(String[] args){
+        List<String> gameList = new ArrayList<String>();
+        gameList.add("Football");
+        gameList.add("Cricket");
+        gameList.add("Hockey");
+        System.out.println("*****|terating**********");
+        gameList.forEach(games->System.out.println(games));
+    }
+}
